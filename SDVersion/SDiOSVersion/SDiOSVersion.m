@@ -52,6 +52,9 @@
                               @"iPhone11,4" : @(iPhoneXSMax),
                               @"iPhone11,6" : @(iPhoneXSMax),
                               @"iPhone11,8" : @(iPhoneXR),
+                              @"iPhone12,1" : @(iPhone11),
+                              @"iPhone12,3" : @(iPhone11Pro),
+                              @"iPhone12,5" : @(iPhone11ProMax),
                               @"i386"       : @(Simulator),
                               @"x86_64"     : @(Simulator),
                               
@@ -95,6 +98,20 @@
                               @"iPad7,4"  : @(iPadPro10Dot5Inch),
                               @"iPad7,5"  : @(iPad6),
                               @"iPad7,6"  : @(iPad6),
+                              @"iPad7,11" : @(iPad7),
+                              @"iPad7,12" : @(iPad7),
+                              @"iPad8,1"  : @(iPadPro11Inch),
+                              @"iPad8,2"  : @(iPadPro11Inch),
+                              @"iPad8,3"  : @(iPadPro11Inch),
+                              @"iPad8,4"  : @(iPadPro11Inch),
+                              @"iPad8,5"  : @(iPadPro12Dot9Inch3Gen),
+                              @"iPad8,6"  : @(iPadPro12Dot9Inch3Gen),
+                              @"iPad8,7"  : @(iPadPro12Dot9Inch3Gen),
+                              @"iPad8,8"  : @(iPadPro12Dot9Inch3Gen),
+                              @"iPad11,1" : @(iPadMini5),
+                              @"iPad11,2" : @(iPadMini5),
+                              @"iPad11,4" : @(iPadAir3),
+                              @"iPad11,5" : @(iPadAir3),
 
                               //iPods
                               @"iPod1,1" : @(iPodTouch1Gen),
@@ -141,7 +158,7 @@
     } else if (screenHeight == 812) {
         return Screen5Dot8inch;
     } else if (screenHeight == 896) {
-        if ([SDiOSVersion deviceVersion] == iPhoneXSMax) {
+        if ([SDiOSVersion deviceVersion] == iPhoneXSMax || [SDiOSVersion deviceVersion] == iPhone11ProMax) {
             return Screen6Dot5inch;
         } else {
             return Screen6Dot1inch;
@@ -203,6 +220,9 @@
              @(iPhoneXS)             : @"iPhone XS",
              @(iPhoneXSMax)          : @"iPhone XS Max",
              @(iPhoneXR)             : @"iPhone XR",
+             @(iPhone11)             : @"iPhone 11",
+             @(iPhone11Pro)          : @"iPhone 11 Pro",
+             @(iPhone11ProMax)       : @"iPhone 11 Pro Max",
              
              @(iPad1)                : @"iPad 1",
              @(iPad2)                : @"iPad 2",
@@ -215,11 +235,16 @@
              @(iPadMini3)            : @"iPad Mini 3",
              @(iPadMini4)            : @"iPad Mini 4",
              @(iPadPro9Dot7Inch)     : @"iPad Pro 9.7 inch",
-             @(iPadPro12Dot9Inch)    : @"iPad Pro 12.9 inch",
+             @(iPadPro12Dot9Inch)    : @"iPad Pro 12.9 inch 1st Gen",
              @(iPad5)                : @"iPad 5",
              @(iPadPro10Dot5Inch)    : @"iPad Pro 10.5 inch",
-             @(iPadPro12Dot9Inch2Gen): @"iPad Pro 12.9 inch",
+             @(iPadPro12Dot9Inch2Gen): @"iPad Pro 12.9 inch 2nd Gen",
              @(iPad6)                : @"iPad 6",
+             @(iPad7)                : @"iPad 7",
+             @(iPadAir3)             : @"iPad Air 3rd Gen",
+             @(iPadMini5)            : @"iPad Mini 5",
+             @(iPadPro11Inch)        : @"iPad Pro 11 inch",
+             @(iPadPro12Dot9Inch3Gen): @"iPad Pro 12.9 inch 3rd Gen",
              
              @(iPodTouch1Gen)        : @"iPod Touch 1st Gen",
              @(iPodTouch2Gen)        : @"iPod Touch 2nd Gen",
